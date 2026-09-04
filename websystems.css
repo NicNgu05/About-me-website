@@ -14,6 +14,8 @@ html, body {
 
 .background {
     position: relative;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
     background-color: black;
@@ -26,9 +28,9 @@ html, body {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image: url('images/nature.jpg');
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: fill;
+    background-size: cover;
     filter: blur(10px);
     z-index: -1;
 }
@@ -37,6 +39,33 @@ html, body {
     color: aliceblue;
     font-weight: bold;
     flex: 1;              
+}
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 20vw;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.footer-nav {
+    position: relative;
+    align-self: flex-start;
+}
+
+.footer-nav a {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;  
+}
+
+.footer p {
+    font-size: 20px;
+    align-self: flex-end;
 }
 
 .nav-links {
@@ -91,55 +120,11 @@ html, body {
     min-width: 100vh;
 }
 
-.about-me-image {
-    flex: 1;
+.h1_heading{
     display: flex;
     align-items: center;
-    justify-content: right;
-    padding: 100px;
-
-}
-
-.about-me-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.about-me-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-.about-me-text h2 {
-    font-size: 48px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
-.about-me-paragraph{
-    font-size: 18px;
-    line-height: 1.8;
-    color: aliceblue; 
-    max-width: 450px;
-}
-
-
-
-.timeline-heading {
-    display: flex;
-    justify-content: center;   
-    align-items: center;
-    margin:30px auto;
-}
-
-
-.timeline-heading h1 {
+    margin:60px auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
     font-weight: bold;
@@ -147,6 +132,7 @@ html, body {
 
 .timeline {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 5em auto;
     max-width:90em;
@@ -156,10 +142,10 @@ html, body {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 4px;
+    width: 5px;
     border-radius: 1px;
     bottom: 0;
-    top: 18%;
+    top: 0%;
     left: 50%;
     background: aliceblue;
 }
@@ -190,14 +176,11 @@ html, body {
 }
 
 .timeline-checkpoint:nth-child(odd) {
-    align-self: flex-end;
-    padding-left: 5em;
-    
+    align-self: flex-end;  
 }
 
 .timeline-checkpoint:nth-child(even) {
     align-self: flex-start;
-    padding-right: 5em;
 }
 
 
@@ -205,35 +188,38 @@ html, body {
     content: '';
     background: aliceblue;
     position: absolute;
-    width: 10.1%;
+    width: 11.9%;
     height: 5px;
     top: 50%;
-    right:1.1%
+    right:-11.5%
 }
 
 .timeline-checkpoint:nth-child(odd)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
-    width: 10.1%;
+    width: 11.5%;
     height: 5px;
     top: 50%;
-    left:1.1%
+    left:-11.1%
 }
 
-.future-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:30px auto;
-}
 
-.future-heading h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    font-weight: bold;
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .future-paragraph {
     display: flex;
@@ -258,6 +244,7 @@ html, body {
 .specific-goal {
     margin-top: 10%;
 }
+
 
 .specific-goal p { 
     display: flex;
