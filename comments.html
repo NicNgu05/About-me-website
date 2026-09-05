@@ -12,32 +12,35 @@
     </head>
 
     <body class="background" >
-    
-        <div class="nav-menu">
+        
+        <div class="website">
+            <h1>Web System</h1>
+        </div>
+
+        <div class="header">
             <div class = "logo"> NN</div>
             
-            <div class="nav-links">
+            <div class="header-links">
                 <a href="index.html" >About</a>
                 <a href="past.html">Past</a>
                 <a href="future.html">Future</a>
                 <a href="comments.html">Comments</a>
             </div>
 
-            <div class="nav-spacer"></div>
+            <div class="header-spacer"></div>
         </div>
 
-        <div>
-            <h1 class="h1_heading"> Technical aspect of my website</h1>
+    
+        <div class="main">
+            <h2 class="title"> Technical aspect of my website</h2>
 
             <p>
-                For this website, 4 webpages and 1 css stylesheet were used during this project which will be outlined below:
+                For this website, <span id="bold">4 Webpages</span> and <span id="bold">1 CSS stylesheet</span> were used during this project which will be outlined below:
             </p>
-           
-        </div>
 
-        <table>
+            <table id="table">
                 <tr>
-                    <th>Filename</th>
+                    <th class="table-heading">Filename</th>
                     <th>Title</th>  
                     <th>File Type</th>
                     <th>Description</th>
@@ -73,24 +76,51 @@
                     <td>websystem.css</td>
                     <td>N/A</td>
                     <td>CSS file</td>
-                    <td>This is used for all my custom css that is applied in the whole website</td>
+                    <td>This is used for all the custom css that is applied in the whole website</td>
                 </tr>
-        </table>
+            </table>
+
+            <p>
+
+            <h3 id="main-heading">Webpage Structure</h3>
+
+            
+                The framework for this website was split into 4 main parts, each separated by its own div element:a title, header, main content section and a footer. Structuring the page this way kept the HTML organised and made styling more manageable, since each div could be targeted individually in the CSS file without any of the styles bleeding into other sections of the page.
+
+                
+                <h4 id="sub-heading"> Title </h4>
+                This is just the title of the website. This title was done using <code> h1 </code> and was placed in the Title div
+                
+                <div class="floatright">
+                    <img src="images/Structure-image.png" alt="image of the structure of each page">
+                </div>
+                
+                <h4 id="sub-heading"> Header </h4>
+    
+                All content within the this div is defined under the <code>.header</code> class in the CSS file. This div contains heading of the website and the navigation bar with its respective hyperlink of each button. 
+
+                <h4 id="sub-heading"> main </h4>
+                This is where the main content sits, which also includes the title of the page. All content within this div is defined under the .main class in the CSS file. This section holds the primary content of each page, keeping it visually separated from the header and footer so the layout stays clear and easy to navigate 
 
 
-        <div class>
-            <h2>Webpage Structure</h2>
+                <h4 id="sub-heading">Footer</h4>
+                The footer div was kept very simple. It contained a supplementary navigation bar so the user had a quicker alternative to change pages, along with the name of the subject. The content was split using a spacer between the subject name and the supplementary navigation bar, which allowed for even spacing (this was also used for the navigation bar)
+                            
+
+                <h3 id="main-heading">Aesthetic</h3>
+                With this website, a minimalistic approach was taken to keep it clean, as adding too much would ruin the aesthetic and usability of the site. A blurred background using <code>.background::before</code> added a nice touch without overdoing it. When it came to font colour and style, Segoe UI was used for the body text, and Times New Roman for the page title. This was chosen because the italic look of the title added some contrast to the minimalistic design and gave it a bit of 'pop'.<br><br>
+
+                In terms of interactions, the navigation bar gives the user a physical cue when hovered over, through a transforming underline. This was implemented by having the underline already in place, but invisible, using <code>scaleX(0)</code>. Once the user hovers over a button, the underline animates in using <code>scaleX(1)</code>, creating a smooth transition effect
+
+               
+                <h3 id="main-heading">Accessibilty</h3>
+        
+            </p>
+
+            
+            
+            
         </div>
-
-         <div>
-            <h2>Aesthetic</h2>
-        </div>
-
-         <div>
-            <h2>Accessibilty</h2>
-        </div>
-
-
        
         <div class="footer">
             <p>

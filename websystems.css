@@ -1,17 +1,18 @@
-/* HTML */
-html {
-    color:aliceblue;
-    font-family: 'Segoe UI', Arial, sans-serif;
-}
-
 html, body {
     min-height: 100%;
     overflow-x: hidden;
     margin:0%;
     padding: 0%;
+    font-size: 20px;
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
+
+
+
+/****************************  BACKGROUND ****************************/
 .background {
     position: relative;
     display: flex;
@@ -35,12 +36,111 @@ html, body {
     z-index: -1;
 }
 
+.main {
+    max-width: 94%;
+    align-self: center;
+    
+}
+
 .logo {
     color: aliceblue;
     font-weight: bold;
     flex: 1;              
 }
 
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.website {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%
+}
+
+
+/**************************** BACKGROUND ****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** NAV BAR ****************************/
+.header {
+    background-color: rgb(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.header a {
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.header-links {
+    display: flex;
+    gap: 20%;
+    flex: 1;
+    justify-content: center;  
+}
+
+.header-spacer {
+    flex: 1;               
+}
+
+
+/**************************** NAV BAR ****************************/
+
+
+
+
+
+
+
+
+/**************************** FOOTER ****************************/
 .footer {
     margin-top: auto;
     position: relative;
@@ -67,79 +167,47 @@ html, body {
     font-size: 20px;
     align-self: flex-end;
 }
+/**************************** FOOTER ****************************/
 
-.nav-links {
-    display: flex;
-    gap: 5vw;
-    flex: 1;
-    justify-content: center;  
+
+
+
+
+
+
+/**************************** ABOUT ME ****************************/
+#about-me-paragraph {
+    margin-bottom: 50px;
 }
 
-.nav-spacer {
-    flex: 1;               
+.list {
+    font-size: 20px
 }
 
-.nav-menu {
-    background-color: rgb(0, 0, 0, 0.2);
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 30px;
-    font-size: 20px;
-    gap: 20vw;
+.list li {
+    margin-bottom: 5px;
 }
+/**************************** ABOUT ME ****************************/
 
-.nav-menu a {
-    position: relative;
-    color: aliceblue;
-    text-decoration: none;
-}
 
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: aliceblue;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease;
-}
 
-.nav-menu a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
 
-.about-me {
-    display: flex;
-    min-width: 100vh;
-}
 
-.h1_heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:60px auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    font-weight: bold;
-}
 
-.timeline {
+
+
+/**************************** TIMELINE ****************************/
+#timeline {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin: 5em auto;
-    max-width:90em;
+    margin: 1% auto;
+    margin-bottom: 4%;
+    max-width:80%;
     
 }
 
-.timeline::before {
+#timeline::before {
     content: '';
     position: absolute;
     width: 5px;
@@ -152,18 +220,17 @@ html, body {
 
 .timeline-checkpoint {
     position: relative;
-    width: 45%;
+    width: 35%;
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
 .timeline-checkpoint div {
-    border: 3px solid aliceblue;
+    border: 5px solid aliceblue;
     border-radius: 10px;
     padding: 20px;
     padding-top: 8px;
 }    
-
 
 .timeline-checkpoint h2 {
     display: flex;
@@ -183,57 +250,30 @@ html, body {
     align-self: flex-start;
 }
 
-
 .timeline-checkpoint:nth-child(even)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
-    width: 11.9%;
+    width: 43%;
     height: 5px;
     top: 50%;
-    right:-11.5%
+    right:-43%
 }
 
 .timeline-checkpoint:nth-child(odd)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
-    width: 11.5%;
+    width: 42.5%;
     height: 5px;
     top: 50%;
-    left:-11.1%
+    left:-42%
 }
+/**************************** TIMELINE ****************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.future-paragraph {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.future-paragraph p {
-    font-size: 20px;
-}
-
-.goals {
+/**************************** FUTURE ****************************/
+#goals {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -244,16 +284,12 @@ html, body {
 .specific-goal {
     margin-top: 10%;
 }
-
-
 .specific-goal p { 
     display: flex;
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
 }
-
-
 .specific-goal img {
     width: 400px;
     height: 250px;
@@ -275,8 +311,60 @@ html, body {
     box-shadow: 0 0 30px 10px rgba(240, 248, 255, 0.6)
 
 }
+/**************************** FUTURE ****************************/
 
 
+
+/**************************** COMMENTS ****************************/
+.floatright {
+    float: right;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.floatright img {
+    width: 500px;
+}
+#bold {
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+#table, th, td {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: rgb(12, 28, 17);
+    border: 1px solid rgba(240, 248, 255);
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+}
+
+#flex-container {
+   display:flex;
+   align-items: center;
+   gap: 50%;
+}
+
+#main-heading {
+    margin-top: 5%;
+    font-size:150%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+
+
+#sub-heading {
+    font-size:110%;
+    margin-bottom: 1%;
+}
+
+
+
+
+/**************************** COMMENTS ****************************/
 
 
 
