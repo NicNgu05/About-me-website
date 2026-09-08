@@ -131,40 +131,40 @@ html, body {
     background: aliceblue;
 }
 
-#timeline-checkpoint {
+.timeline-checkpoint {
     position: relative;
     width: 35%;
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
-#timeline-checkpoint div {
+.timeline-checkpoint div {
     border: 5px solid aliceblue;
     border-radius: 10px;
     padding: 20px;
     padding-top: 8px;
 }    
 
-#timeline-checkpoint h2 {
+.timeline-checkpoint h2 {
     display: flex;
     align-items: center;
     font-size:120%
 
 }
 
-#timeline-checkpoint p {
+.timeline-checkpoint p {
     font-size: 90%;
 }
 
-#timeline-checkpoint:nth-child(odd) {
+.timeline-checkpoint:nth-child(odd) {
     align-self: flex-end;  
 }
 
-#timeline-checkpoint:nth-child(even) {
+.timeline-checkpoint:nth-child(even) {
     align-self: flex-start;
 }
 
-#timeline-checkpoint:nth-child(even)::before  {
+.timeline-checkpoint:nth-child(even)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
@@ -174,7 +174,7 @@ html, body {
     right:-43%
 }
 
-#timeline-checkpoint:nth-child(odd)::before  {
+.timeline-checkpoint:nth-child(odd)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
@@ -194,16 +194,16 @@ html, body {
     gap: 100px;
 }
 
-#specific-goal {
+.specific-goal {
     margin-top: 10%;
 }
-#specific-goal p { 
+.specific-goal p { 
     display: flex;
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
 }
-#specific-goal img {
+.specific-goal img {
     width: 400px;
     height: 250px;
     border-radius: 10px;
@@ -227,7 +227,7 @@ html, body {
 
 
 /**************************** COMMENTS ****************************/
-#bold {
+.bold {
     font-weight: bold;
     text-decoration: underline;
     
@@ -243,34 +243,34 @@ html, body {
     padding: 10px;
 }
 
-#floatright {
+.floatright {
     float: right;
     text-align: right;
     margin-left: 20px;
 }
 
-#floatright img {
+.floatright img {
     width: 500px;
     padding: 12% 3%;
 }
 
-#sub-heading-1 {
+.sub-heading-1 {
     margin-top: 5%;
     font-size:160%;
     margin-bottom: 1%;
     text-decoration: underline;
 }
 
-#sub-heading-2 {
+.sub-heading-2 {
     font-size:120%;
     margin-bottom: 1%;
 }
 
-#links {
+.links {
     color: aliceblue;
 }
 
-#links:hover {
+.links:hover {
     font-weight: bold;
 }
 
