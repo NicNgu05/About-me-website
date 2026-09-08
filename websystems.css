@@ -1,18 +1,14 @@
+/**************************** GLOBAL ****************************/
 html, body {
     min-height: 100%;
     overflow-x: hidden;
     margin:0%;
     padding: 0%;
-    font-size: 20px;
+    font-size: 18px;
     color:aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 
-
-
-
-/****************************  BACKGROUND ****************************/
 .background {
     position: relative;
     display: flex;
@@ -36,55 +32,16 @@ html, body {
     z-index: -1;
 }
 
-.main {
-    max-width: 94%;
-    align-self: center;
-    
-}
-
-.logo {
-    color: aliceblue;
-    font-weight: bold;
-    flex: 1;              
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-    font-weight: bold;
-}
-
-.website {
+.title {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 1% 1%;
     background-color: rgb(0, 0, 0, 0.2);
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%
 }
 
-
-/**************************** BACKGROUND ****************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**************************** NAV BAR ****************************/
 .header {
     background-color: rgb(0, 0, 0, 0.2);
     position: relative;
@@ -92,7 +49,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 30px;
+    padding: 3% 3%;
 }
 
 .header a {
@@ -121,82 +78,38 @@ html, body {
 
 .header-links {
     display: flex;
-    gap: 20%;
+    gap: 15%;
     flex: 1;
     justify-content: center;  
 }
 
-.header-spacer {
-    flex: 1;               
+.main {
+    max-width: 90%;
+    align-self: center;
 }
 
-
-/**************************** NAV BAR ****************************/
-
-
-
-
-
-
-
-
-/**************************** FOOTER ****************************/
-.footer {
-    margin-top: auto;
-    position: relative;
+.page-title{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 30px;
-    gap: 20vw;
-    background: rgb(0, 0, 0, 0.5);
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    font-weight: bold;
 }
 
-.footer-nav {
-    position: relative;
-    align-self: flex-start;
-}
 
-.footer-nav a {
-    position: relative;
-    text-decoration: none;
-    color: aliceblue;  
-}
-
-.footer p {
-    font-size: 20px;
-    align-self: flex-end;
-}
-/**************************** FOOTER ****************************/
-
-
-
-
-
-
-
-/**************************** ABOUT ME ****************************/
+/**************************** ABOUT ME PAGE ****************************/
 #about-me-paragraph {
     margin-bottom: 50px;
 }
 
-.list {
-    font-size: 20px
+#about-me-list li {
+    margin-bottom: 4px;
 }
 
-.list li {
-    margin-bottom: 5px;
-}
-/**************************** ABOUT ME ****************************/
 
-
-
-
-
-
-
-
-/**************************** TIMELINE ****************************/
+/**************************** PAST PAGE ****************************/
 #timeline {
     display: flex;
     position: relative;
@@ -218,39 +131,40 @@ html, body {
     background: aliceblue;
 }
 
-.timeline-checkpoint {
+#timeline-checkpoint {
     position: relative;
     width: 35%;
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
-.timeline-checkpoint div {
+#timeline-checkpoint div {
     border: 5px solid aliceblue;
     border-radius: 10px;
     padding: 20px;
     padding-top: 8px;
 }    
 
-.timeline-checkpoint h2 {
+#timeline-checkpoint h2 {
     display: flex;
     align-items: center;
+    font-size:120%
 
 }
 
-.timeline-checkpoint p {
-    font-size: 16px;
+#timeline-checkpoint p {
+    font-size: 90%;
 }
 
-.timeline-checkpoint:nth-child(odd) {
+#timeline-checkpoint:nth-child(odd) {
     align-self: flex-end;  
 }
 
-.timeline-checkpoint:nth-child(even) {
+#timeline-checkpoint:nth-child(even) {
     align-self: flex-start;
 }
 
-.timeline-checkpoint:nth-child(even)::before  {
+#timeline-checkpoint:nth-child(even)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
@@ -260,7 +174,7 @@ html, body {
     right:-43%
 }
 
-.timeline-checkpoint:nth-child(odd)::before  {
+#timeline-checkpoint:nth-child(odd)::before  {
     content: '';
     background: aliceblue;
     position: absolute;
@@ -269,10 +183,9 @@ html, body {
     top: 50%;
     left:-42%
 }
-/**************************** TIMELINE ****************************/
 
 
-/**************************** FUTURE ****************************/
+/**************************** FUTURE PAGE ****************************/
 #goals {
     display: flex;
     flex-direction: row;
@@ -281,50 +194,39 @@ html, body {
     gap: 100px;
 }
 
-.specific-goal {
+#specific-goal {
     margin-top: 10%;
 }
-.specific-goal p { 
+#specific-goal p { 
     display: flex;
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
 }
-.specific-goal img {
+#specific-goal img {
     width: 400px;
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 0 30px 10px rgba(240, 248, 255, 0.6);
 }
 
-.specific-goal-raised p { 
+#specific-goal-raised p { 
     display: flex;
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
 }
 
-.specific-goal-raised img {
+#specific-goal-raised img {
     width: 400px;
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 0 30px 10px rgba(240, 248, 255, 0.6)
 
 }
-/**************************** FUTURE ****************************/
-
 
 
 /**************************** COMMENTS ****************************/
-.floatright {
-    float: right;
-    text-align: right;
-    margin-left: 20px;
-}
-
-.floatright img {
-    width: 500px;
-}
 #bold {
     font-weight: bold;
     text-decoration: underline;
@@ -341,67 +243,56 @@ html, body {
     padding: 10px;
 }
 
-#flex-container {
-   display:flex;
-   align-items: center;
-   gap: 50%;
+#floatright {
+    float: right;
+    text-align: right;
+    margin-left: 20px;
 }
 
-#main-heading {
+#floatright img {
+    width: 500px;
+    padding: 12% 3%;
+}
+
+#sub-heading-1 {
     margin-top: 5%;
-    font-size:150%;
+    font-size:160%;
     margin-bottom: 1%;
     text-decoration: underline;
 }
 
-
-
-#sub-heading {
-    font-size:110%;
+#sub-heading-2 {
+    font-size:120%;
     margin-bottom: 1%;
 }
 
+#links {
+    color: aliceblue;
+}
+
+#links:hover {
+    font-weight: bold;
+}
 
 
+/**************************** FOOTER ****************************/
 
-/**************************** COMMENTS ****************************/
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    gap: 20%;
+    background: rgb(0, 0, 0, 0.5);
+}
 
+.footer-nav {
+    position: relative;
+    align-self: flex-start;
+}
 
-
-
-
-
-    
- 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
+.footer-nav a {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;  
+}
