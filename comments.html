@@ -35,50 +35,50 @@
             </p>
 
             <table id="table">
-                <tr>
-                    <th>Filename</th>
-                    <th>Title</th>  
-                    <th>File Type</th>
-                    <th>Description</th>
-                </tr>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Title</th>  
+                        <th>File Type</th>
+                        <th>Description</th>
+                    </tr>
 
-                <tr>
-                    <td>index.html</td>
-                    <td>Home</td>
-                    <td>HTML file</td>
-                    <td>This page is used as the home page for my website with some information about me</td>
-                </tr>
+                    <tr>
+                        <td>index.html</td>
+                        <td>Home</td>
+                        <td>HTML file</td>
+                        <td>This page is used as the home page for my website with some information about me</td>
+                    </tr>
 
-                <tr>
-                    <td>past.html</td>
-                    <td>Past</td>
-                    <td>HTML file</td>
-                    <td>This page talks about my past computing journey</td>
-                </tr>
-                <tr>
-                    <td>future.html</td>
-                    <td>Future</td>
-                    <td>HTML file</td>
-                    <td>This page is about what I plan to do in the future</td>
-                </tr>
+                    <tr>
+                        <td>past.html</td>
+                        <td>Past</td>
+                        <td>HTML file</td>
+                        <td>This page talks about my past computing journey</td>
+                    </tr>
+                    <tr>
+                        <td>future.html</td>
+                        <td>Future</td>
+                        <td>HTML file</td>
+                        <td>This page is about what I plan to do in the future</td>
+                    </tr>
 
-                <tr>
-                    <td>comments.html</td>
-                    <td>Comments</td>
-                    <td>HTML file</td>
-                    <td>This page explains the technical aspect of my website</td>
-                </tr>
-                <tr>
-                    <td>websystem.css</td>
-                    <td>N/A</td>
-                    <td>CSS file</td>
-                    <td>This is used for all the custom css that is applied in the whole website</td>
-                </tr>
-            </table>
-
-            <p>
+                    <tr>
+                        <td>comments.html</td>
+                        <td>Comments</td>
+                        <td>HTML file</td>
+                        <td>This page explains the technical aspect of my website</td>
+                    </tr>
+                    <tr>
+                        <td>websystem.css</td>
+                        <td>N/A</td>
+                        <td>CSS file</td>
+                        <td>This is used for all the custom css that is applied in the whole website</td>
+                    </tr>
+                </table>
+                
                 <h3 class="sub-heading-1">Webpage Structure</h3>
-                The framework for this website was split into 4 main parts, each separated by its own div element:
+
+                <p> The framework for this website was split into 4 main parts, each separated by its own div element: </p>
 
                 <ul>
                     <li> Title </li>
@@ -87,52 +87,67 @@
                     <li> Footer </li>
                 </ul>
 
-                 Structuring the page this way kept the HTML organised and made styling more manageable, since each div could be targeted individually in the CSS file without any of the styles bleeding into other sections of the page.
+                <p>Structuring the page this way kept the HTML organised and made styling more manageable, since each div could be targeted individually in the CSS file without any of the styles bleeding into other sections of the page.</p>
 
                 <div class="floatright">
                     <img src="images/Structure-image.png" alt="image of the structure of each page">
                 </div>
                 
                 <h4 class="sub-heading-2"> Title </h4>
-                This is just the title of the website. This title was done using <code>h1</code> and was placed in the div <code>.title</code>.
+                <p> This is just the title of the website. This title was done using <code>h1</code> and was placed in the div <code>.title</code>. </p>
+                
                                 
                 <h4 class="sub-heading-2"> Header </h4>
-                All content within the this div is defined under the <code>.header</code> class in the CSS file. This div the navigation bar with its respective hyperlink of each button. 
+                <p> All content within the this div is defined under the <code>.header</code> class in the CSS file. This div manages the navigation bar with its respective hyperlink of each button with a clear animation whenever hovered over. </p>
 
                 <h4 class="sub-heading-2"> main </h4>
-                This is where the main content sits, which also includes the title of the page. All content within this <code>div</code> is defined under the <code>.main</code> class in the CSS file. This section holds the primary content of each page, keeping it visually separated from the rest of the <code>divs</code> so the layout stays clear and easy to navigate if content is updated later on.
+                <p> This is where the main content sits, which also includes the title of the page. All content within this <code>div</code> is defined under the <code>.main</code> class in the CSS file. This section holds the primary content of each page, keeping it visually separated from the rest of the <code>divs</code> so the layout stays clear and easy to navigate if content is updated later on. I set the max-width of the main to <code>max-width: 90vw</code> which meant the width would scale with the viewpoint of the screen. </p>
 
                 <h4 class="sub-heading-2">Footer</h4>
-                The footer <code>div</code> was kept very simple. It contained a supplementary navigation bar so the user had a quicker alternative to change pages, along with the name of the subject. The way the information was split and placed on both sides of the page was through the use of <code>justify-content: space-between</code> which allowed for the content and second navigation bar to be seperated adding a more minimialist look.      
+                <p> The footer <code>div</code> was kept very simple. It contained a supplementary navigation bar so the user had a quicker alternative to change pages, along with the name of the subject. The way the information was split and placed on both sides of the page was through the use of <code>justify-content: space-between</code> which allowed for the content and second navigation bar to be seperated adding a more minimialist look. </p>    
 
-                <h3 class="main-heading-2">Aesthetic</h3>
-                With this website, a minimalistic approach was taken to keep it clean, as adding too much would ruin the aesthetic and usability of the site. A blurred background using <code>.background::before</code> added a nice touch without overdoing it. When it came to font colour and style, Segoe UI was used for the body text, and Times New Roman for the page title. This was chosen because the italic look of the title added some contrast to the minimalistic design and gave it a bit of 'pop'.<br><br>
+                <h3 class="sub-heading-1">Aesthetic</h3>
+                <p> With this website, a minimalistic approach was taken to keep it clean, as adding too much would ruin the aesthetic and usability of the site. A blurred background using <code>.background::before</code> added a nice touch without overdoing it. By implementing <code>::before</code> for the background, it allowed for just the background to be blurred and position it at the back using <code>z-index: -1</code> which just moved it behind everything else. When it came to font colour and style, Segoe UI was used for the body text, and Times New Roman for the page title. This was chosen because the italic look of the title added some contrast to the minimalistic design and gave it a bit of 'pop'.
 
-                In terms of interactions, the navigation bar gives the user a physical cue when hovered over, through a transforming underline. This was implemented by having the underline already in place, but invisible, using <code>scaleX(0)</code>. Once the user hovers over a button, the underline animates in using <code>scaleX(1)</code>, creating a smooth transition effect
+                In terms of interactions, the navigation bar gives the user a visual cue when hovered over, through a transforming underline. This was implemented by having the underline already in place, but invisible, using <code>scaleX(0)</code>. Once the user hovers over a button, the underline animates in using <code>scaleX(1)</code>, creating a smooth transition effect <br> <br>
 
-                For the past section, instead of the tradition list for the past computing journey. A vertical timeline was adopted with alternating tree branches. This was done using <code>nth-child(odd)</code> and <code>nth-child(even)</code> selectors which branched off a center vertical stems with connecters connecting each branch to the stem. This gave the section some personality and while still keeping the information to follow due to it already being in chronology order in a visually engaging way.
+                For the past section, instead of the tradition list for the past computing journey. A vertical timeline was adopted with alternating tree branches. This was done using <code>nth-child(odd)</code> and <code>nth-child(even)</code> selectors which branched off a center vertical stems with connecters connecting each branch to the stem. This gave the section some personality and while still keeping the information to follow due to it already being in chronology order in a visually engaging way. However, I couldn't get the timeline to scale with the screen size. Whenever you zoom out a lot, it doesn't scale well which does ruin the aesthetics. I tried setting the height of the whole timeline to a % of the <code>.main</code> however it didn't seem to fix it so I just left it alone and has been noted in the technical section. Another issue that I ran across was having to hardcode the positions of the connecting stems as I could not figure out how to position them correctly as it kept bugging out whenever I did try
+
+                <br><br> for the footer, I kept it simple, with 3 things the html validation logo, uts name and a mini-navigation bar if the user wanted to change pages but was at the bottom of the page. This kept the aesthetic miniminal with a little but impactful features as possible. The user was able to see that the website went through a html checker and had a convenient navigation bar to change pages or go back up.
+                </p>
+
+    
                
                 <h3 class="sub-heading-1">Accessibilty</h3>
 
                 <h4 class="sub-heading-2">Screen Reader & Structure</h4>
-                As noted above this, the structure was kept simple and minimalistic so that is was easy to navigate with any random clutter like a casino room. This way everything was given to the user without them feeling confused with a clear chronology order structure. Not only that, all images within this website have alt text so that when images are turned off, the user can visualise what is being shown through the description. The implemention of the correct headers allowed that when customed css was turned off, title, sub-headings and body of text could be distinguished from one another. Any links that were implemented as well would turn bold when hovered over and the navigation bar had animation that would indicate if it was being hovered over.
+                <p> As noted above this, the structure was kept simple and minimalistic so that is was easy to navigate without any random clutter like a casino room. This way everything was given to the user without them feeling confused with a clear chronology order structure. Not only that, all images within this website have alt text so that when images are turned off, the user can visualise what is being shown through the description. The implemention of the correct headers allowed that when customed css was turned off, title, sub-headings and body of text could be distinguished from one another. Any links that were implemented as well would turn bold when hovered over and the navigation bar had animation that would indicate if it was being hovered over. I also checked with html checker (<a class="links" href="https://validator.w3.org/nu/">Nu Html Checker</a>) and a css checker (<a class="links" href="https://jigsaw.w3.org/css-validator/"> WSC</a>) and no errors happened. 
+                
+                </p>
 
                 <h4 class="sub-heading-2">Font Size</h4>
-                When it came to font size, a default font size of 18px was set however, everything within the website scales by % so that if the page was zoomed out or in it would still be readable
+                <p> When it came to font size, a default font size of 18px was set however, everything within the website scales by % so that if the page was zoomed out or in it would still be readable. </p>
 
                 <h4 class="sub-heading-2">Font Selection</h4>
-                for font selection, a clean font needed to be selected so that nothing in the website would be too difficult to read so Segoe UI was used for the body text. The implemention of Times New Roman for the page title was also selected because the italic look of the title added some contrast to the minimalistic design and gave it a bit of 'pop'
+                <p> for font selection, a clean font needed to be selected so that nothing in the website would be too difficult to read so Segoe UI was used for the body text. The implemention of Times New Roman for the page title was also selected because the italic look of the title added some contrast to the minimalistic design and gave it a bit of 'pop' while still being visually easy on the eye. </p>
 
                 <h4 class="sub-heading-2">Colour Selection</h4>
-                For the background, the nice dark green tone background was selected, with a aliceblue text. This was tested on a contrast checker (<a class="links" href="https://webaim.org/resources/">webAIM</a>) which passed with a contrast ratio  of 11.29:1.
-            </p>
+                <p> For the background, the nice dark green tone background was selected, with a aliceblue text. This was tested on a contrast checker (<a class="links" href="https://webaim.org/resources/">webAIM</a>) which passed with a contrast ratio  of 11.29:1. </p>
+           
         </div>
+
+         
        
         <div class="footer">
             <p>
                 32168 Websystem, <br>
-                University of Technology Sydney 2026
+                University of Technology Sydney 2026 <br> <br>
+
+                 <a href="https://jigsaw.w3.org/css-validator/check/referer"> 
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"/>
+                </a>
             </p>
+            
 
              <div class="footer-nav">
                 <a href="index.html" >About |</a>
